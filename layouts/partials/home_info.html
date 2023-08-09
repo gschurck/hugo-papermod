@@ -6,7 +6,7 @@
     <div class="home-info-container">
         {{- if .image.url}}
             {{- if .image.link -}}
-            <a href="{{ .image.link | absURL }}" target="_blank" rel="noopener">
+            <a href="{{ .image.link | absURL }}" target="_blank" rel="noopener" aria-label="Github profile">
                 <img draggable="false" src="{{ .image.url | absURL }}" alt=" {{ .image.title | default "profile image" }}"
                     title="{{ .image.title }}" height="{{ .image.height | default 150 }}" width="{{ .image.width | default 150 }}" />
             </a>
